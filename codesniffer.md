@@ -4,7 +4,7 @@ no Ubuntu execute os seguintes comandos, para instalar o codesniffer
 
 `$ sudo composer global require "phpcompatibility/php-compatibility=*"`
 
-`$ vim /home/jerfeson/.bashrc`
+`$ vim /home/SEU_USUARIO/.bashrc`
 
 Add ao final do arquivo
 
@@ -16,11 +16,11 @@ export APP_ENV=desenvolvimento
 
 salve e saia, execute o comando abaixo
 
-`$ source /home/jerfeson/.bashrc`
+`$ source /home/SEU_USUARIO/.bashrc`
 
 configure o php-compatibility no phpcs
 
-`$ phpcs --config-set installed_paths /home/user/.composer/vendor/phpcompatibility/php-compatibility/`
+`$ phpcs --config-set installed_paths /home/SEU_USUARIO/.composer/vendor/phpcompatibility/php-compatibility/`
 
 Certifique a instalação com o comando
 
@@ -40,4 +40,8 @@ PASTA NO WINDOWS, PASTA NO LINUX (`/mnt/f/p21/sistemas/web/apache/cra`)
 
 PHPCODESNIFFER PATH (PHPSTORM)
 
-`/home/usuario/.composer/vendor/squizlabs/php_codesniffer/bin/phpcs`
+`/home/SEU_USUARIO/.composer/vendor/squizlabs/php_codesniffer/bin/phpcs`
+
+File -> Settings -> Editor -> Inspections -> PHP -> Quality tools -> PHP Code Sniffer validation
+
+No campo "Coding standard" clique no ícone de "atualizar" e selecione a opção "PHPCompatibility"
